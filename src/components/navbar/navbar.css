@@ -1,0 +1,70 @@
+.navigationComponent {
+    height: 100%;
+    display: flex;
+    width: 260px;
+    max-width: 260px;
+    text-align: left;
+    min-height: 100vh;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    will-change: transform;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    box-shadow: 0 0.125rem 9.375rem rgba(90, 97, 105, .1), 0 0.25rem 0.5rem rgba(90, 97, 105, .12), 0 0.9375rem 1.375rem rgba(90, 97, 105, .1), 0 0.4375rem 2.1875rem rgba(165, 182, 201, .1);
+}
+
+.crm-cafe__Logo {
+    margin: 20px 10px 10px 20px;
+}
+
+.navigationComponent .categories {
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+    color: #3d5170;
+    line-height: 22px;
+    padding: 10px 3px;
+    padding-left: 25px;
+    align-items: center;
+    font-family: 'Montserrat-Regular';
+}
+
+.navigationComponent .categories:hover {
+    color: var(--activeColor);
+    background-color: #fbfbfb;
+    box-shadow: inset 0.1875rem 0 0 #007bff;
+    border-left: 1.2px solid var(--activeColor);
+}
+
+.active-link {
+    color: var(--activeColor);
+    background-color: #fbfbfb;
+    box-shadow: inset 0.1875rem 0 0 #007bff;
+    border-left: 1.2px solid var(--activeColor);
+}
+
+.categories img {
+    margin-right: 15px;
+}
+
+.quote-block {
+    /* position: absolute; */
+    padding: 5px;
+    margin-top: auto;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+.quote-block img {
+    margin-top: 20px;
+}
+
+.quote-block span {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat-Medium";
+}
