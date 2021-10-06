@@ -5,13 +5,11 @@ import ProfitPage from "./pages/profit/profit";
 import Header from "./components/header/header";
 import NavBar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
-import ProjectPage from "./pages/project/project";
 import EmployeePage from "./pages/employee/employee";
 // import ArticlePage from "./pages/article/article";
 // import NewsPage from "./pages/news-page/news-page";
 // import AddNewsPage from "./pages/add-news/add-news";
 import ProceedsPage from "./pages/proceeds/proceeds";
-import ProjectsPage from "./pages/projects/projects";
 import LoginPage from "./pages/login-page/login-page";
 import DepartmentPage from "./pages/department/department";
 import CreateMealPage from "./pages/create-meal/create-meal";
@@ -24,7 +22,6 @@ import EditIngredientPage from "./pages/edit-ingredient/edit-ingredient";
 import EditFoodDrinkPage from "./pages/edit-food__drink/edit-food_drink";
 import CreateIngredientPage from "./pages/create-ingredient/create-ingredient";
 // import PersonalPage from "./pages/personal-area/personal-area";
-import EditProjectPage from "./pages/edit-project/edit-project";
 // import EditArticlePage from "./pages/edit-article/edit-article";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import PersonalEditPage from "./pages/personal-edit/personal-edit";
@@ -59,7 +56,6 @@ function App() {
                   component={AddEmployeePage}
                 />
                 {/* <Route path="/add-news/" exact component={AddNewsPage} /> */}
-                <Route path="/project/:id/" exact component={ProjectPage} />
                 {/* <Route path="/article/:id/" exact component={ArticlePage} /> */}
                 {/* <Route path="/personal/:id/" exact component={PersonalPage} /> */}
                 <Route
@@ -81,9 +77,12 @@ function App() {
                   component={CreateIngredientPage}
                 />
                 <Route path="/create-meal/" exact component={CreateMealPage} />
-                <Route path="/edit-meal/:id" exact component={EditFoodDrinkPage} />
+                <Route
+                  path="/edit-meal/:id"
+                  exact
+                  component={EditFoodDrinkPage}
+                />
 
-                <Route path="/projects/:page/" exact component={ProjectsPage} />
                 <Route
                   path="/order-statistics/"
                   exact
@@ -109,11 +108,7 @@ function App() {
                   exact
                   component={AddDepartmentPage}
                 />
-                <Route
-                  path="/edit-project/:id/"
-                  exact
-                  component={EditProjectPage}
-                />
+               
                 {/* <Route
                   path="/edit-article/:id/"
                   exact
