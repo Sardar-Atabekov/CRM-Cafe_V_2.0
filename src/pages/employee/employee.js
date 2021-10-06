@@ -8,7 +8,6 @@ import EllipseImg from "./../../assets/img/Ellipse 40.png";
 import summaryIcon from "./../../assets/icons//summary.svg";
 import telegramIcon from "./../../assets/icons/telegram.svg";
 import ImgBlock from "../../components/img-block/img-block";
-import TestBlock from "../../components/test-block/test-block";
 import { userStatus, projectType } from "../../constants/status";
 import mailSendIcon from "./../../assets/icons/bx-mail-send.svg";
 import { Link } from "react-router-dom";

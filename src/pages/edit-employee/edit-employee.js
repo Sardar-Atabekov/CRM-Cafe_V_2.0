@@ -3,7 +3,6 @@ import Title from "../../components/title/title";
 import Loading from "../../components/loading/loading";
 import Alert, { confirmAlert } from "../../functions/alert";
 import DeleteBtn from "../../components/buttons/deleteBtn";
-import TestsBlock from "../../components/test-block/test-block";
 import { getData, patchData, postData } from "../../functions/requests";
 import "./edit-employee.css";
 const EditUserPage = (props) => {

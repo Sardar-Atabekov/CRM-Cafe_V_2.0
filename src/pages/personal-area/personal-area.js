@@ -7,7 +7,6 @@ import downloadIcon from "./../../assets/img/Group 115.png";
 import summaryIcon from "./../../assets/icons//summary.svg";
 import telegramIcon from "./../../assets/icons/telegram.svg";
 import mailSendIcon from "./../../assets/icons/bx-mail-send.svg";
-import TestBlock from "./../../components/test-block/test-block";
 import {
   userStatus,
   projectType,
@@ -143,12 +142,12 @@ const PersonalAreaPage = (props) => {
               ) : (
                 <div className="mt-4">
                   <div className="d-flex">
-                    {tests.length > 0 ? (
+                    {/* {tests.length > 0 ? (
                       <TestBlock
                         tests={tests}
                         className="box-shadow w-50 ml-5"
                       />
-                    ) : null}
+                    ) : null} */}
                   </div>
                 </div>
               )}
